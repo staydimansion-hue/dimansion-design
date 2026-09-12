@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&display=swap">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    body { margin: 0; }
+    a { color: #b5652b; } a:hover { color: #9c5527; }
+    * { box-sizing: border-box; }
+    .eyebrow { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #8a7d6c; font-weight: 600; }
+    .swatch-label { font-size: 12px; font-weight: 600; color: #2b241d; }
+    .swatch-hex { font-size: 11.5px; color: #8a7d6c; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+    .swatch-usage { font-size: 10.5px; color: #8a7d6c; line-height: 1.4; }
+  </style>
+</helmet>
+<div style="width: 900px; background: #fffdf9; font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif; color: #2b241d; padding: 56px 64px; display: flex; flex-direction: column; gap: 48px;">
+
+  <div style="display: flex; flex-direction: column; gap: 6px;">
+    <div class="eyebrow">DIMENSION CREW · DESIGN SYSTEM</div>
+    <div style="font-family: 'Bricolage Grotesque', 'Pretendard Variable', sans-serif; font-size: 34px; font-weight: 700;">Foundations</div>
+    <div style="font-size: 13.5px; color: #8a7d6c;">STAY DIMANSION 출퇴근·청소 앱에서 실제 사용 중인 색상·타이포·아이콘 값을 그대로 정리했습니다.</div>
+  </div>
+
+  <!-- Colors -->
+  <div style="display: flex; flex-direction: column; gap: 18px;">
+    <div class="eyebrow">Color · 색상</div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;">
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #2b241d;"></div>
+        <div class="swatch-label">ink</div>
+        <div class="swatch-hex">#2b241d</div>
+        <div class="swatch-usage">본문 텍스트, 진한 버튼(bg-ink), 강조 아이콘</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #8a7d6c;"></div>
+        <div class="swatch-label">muted</div>
+        <div class="swatch-hex">#8a7d6c</div>
+        <div class="swatch-usage">보조 텍스트, 라벨, 비활성 탭</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #f6f0e6; border: 1px solid #ddd1ba;"></div>
+        <div class="swatch-label">bg</div>
+        <div class="swatch-hex">#f6f0e6</div>
+        <div class="swatch-usage">페이지 배경, 매니페스트 테마 컬러</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #fffdf9; border: 1px solid #ddd1ba;"></div>
+        <div class="swatch-label">card</div>
+        <div class="swatch-hex">#fffdf9</div>
+        <div class="swatch-usage">카드/테이블/입력창 배경, 하단 내비 배경</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #ddd1ba;"></div>
+        <div class="swatch-label">line</div>
+        <div class="swatch-hex">#ddd1ba</div>
+        <div class="swatch-usage">테두리, 구분선</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #b5652b;"></div>
+        <div class="swatch-label">accent</div>
+        <div class="swatch-hex">#b5652b</div>
+        <div class="swatch-usage">주요 버튼, 활성 탭 밑줄, 링크, 앱 아이콘</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #9c5527;"></div>
+        <div class="swatch-label">accent-hover</div>
+        <div class="swatch-hex">#9c5527</div>
+        <div class="swatch-usage">accent hover 상태</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #ece2d0;"></div>
+        <div class="swatch-label">neutral (informal)</div>
+        <div class="swatch-hex">#ece2d0</div>
+        <div class="swatch-usage">미완료 상태 배경(청소 전 방, 캘린더 근무일)</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #5c6b52;"></div>
+        <div class="swatch-label">sage</div>
+        <div class="swatch-hex">#5c6b52</div>
+        <div class="swatch-usage">완료·승인 상태 텍스트, 예상 입금액 숫자</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #e3e8dd;"></div>
+        <div class="swatch-label">sage-tint</div>
+        <div class="swatch-hex">#e3e8dd</div>
+        <div class="swatch-usage">완료·승인 배지 배경, 캘린더 요약 카드</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #8a4b3f;"></div>
+        <div class="swatch-label">brick</div>
+        <div class="swatch-hex">#8a4b3f</div>
+        <div class="swatch-usage">대기·경고 상태 텍스트, 삭제 버튼</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="width: 100%; height: 80px; border-radius: 12px; background: #f4e6df;"></div>
+        <div class="swatch-label">brick-tint</div>
+        <div class="swatch-hex">#f4e6df</div>
+        <div class="swatch-usage">대기·경고 배지 배경</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="width: 100%; height: 1px; background: #ddd1ba;"></div>
+
+  <!-- Typography -->
+  <div style="display: flex; flex-direction: column; gap: 18px;">
+    <div class="eyebrow">Typography · 타이포그래피</div>
+
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+      <div style="font-family: 'Bricolage Grotesque', 'Pretendard Variable', sans-serif; font-size: 15px; font-weight: 700;">Display — Bricolage Grotesque</div>
+      <div style="font-size: 11.5px; color: #8a7d6c;">weight 500 / 700 · 큰 숫자(예상 입금액), 브랜드 로고 타입에 사용</div>
+      <div style="font-family: 'Bricolage Grotesque', 'Pretendard Variable', sans-serif; font-size: 28px; font-weight: 700; margin-top: 6px;">247,500원</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 4px; margin-top: 10px;">
+      <div style="font-size: 15px; font-weight: 700;">Sans — Pretendard Variable</div>
+      <div style="font-size: 11.5px; color: #8a7d6c;">CDN 로드(jsdelivr) · 폴백: -apple-system, Noto Sans KR · 앱 전체 본문 폰트</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="font-size: 22px; font-weight: 700; width: 60px;">22px</span><span style="font-weight: 700;">페이지 타이틀 — 출퇴근 관리</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="font-size: 19px; font-weight: 700; width: 60px;">19px</span><span style="font-weight: 700;">체크인 확인 — 이성훈님, 출근하셨나요?</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="font-size: 15px; font-weight: 600; width: 60px;">15px</span><span style="font-weight: 600;">주요 버튼 텍스트 — 출근하기</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="font-size: 13.5px; width: 60px; color: #8a7d6c;">13.5px</span><span>테이블 본문, 기본 바디 텍스트</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="font-size: 13px; font-weight: 600; width: 60px; color: #8a7d6c;">13px</span><span style="font-weight: 600;">하단 내비·관리자 탭 텍스트</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; width: 60px; color: #8a7d6c;">11px</span><span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8a7d6c; font-weight: 600;">테이블 헤더 / 섹션 라벨(uppercase, tracking)</span></div>
+    </div>
+  </div>
+
+  <div style="width: 100%; height: 1px; background: #ddd1ba;"></div>
+
+  <!-- Icons -->
+  <div style="display: flex; flex-direction: column; gap: 18px;">
+    <div class="eyebrow">Icons · 아이콘</div>
+    <div style="font-size: 11.5px; color: #8a7d6c; margin-top: -8px;">코드베이스 전체에서 커스텀 아이콘은 이 3개뿐입니다. 이모지·픽토그램 없이 stroke 기반 인라인 SVG로 통일.</div>
+    <div style="display: flex; gap: 40px;">
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div style="width: 56px; height: 56px; border-radius: 9999px; border: 1.6px solid #2b241d; display: flex; align-items: center; justify-content: center;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="7.5" r="3.5" stroke="#2b241d" stroke-width="1.8" />
+            <path d="M4.5 20c0-4.14 3.36-7 7.5-7s7.5 2.86 7.5 7" stroke="#2b241d" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="swatch-label">PersonIcon</div>
+        <div class="swatch-usage" style="text-align: center;">출근/퇴근 확인 화면</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div style="width: 56px; height: 56px; border-radius: 9999px; border: 1px solid #ddd1ba; display: flex; align-items: center; justify-content: center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12Z" stroke="#2b241d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="12" cy="12" r="3" stroke="#2b241d" stroke-width="1.6" />
+          </svg>
+        </div>
+        <div class="swatch-label">EyeIcon</div>
+        <div class="swatch-usage" style="text-align: center;">비밀번호 표시</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div style="width: 56px; height: 56px; border-radius: 9999px; border: 1px solid #ddd1ba; display: flex; align-items: center; justify-content: center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M3 3l18 18M10.6 5.2C11.05 5.07 11.52 5 12 5c7 0 10.5 7 10.5 7-.68 1.36-1.65 2.87-2.96 4.14M6.7 6.7C4.3 8.2 2.6 10.6 1.5 12c0 0 3.5 7 10.5 7 1.7 0 3.2-.42 4.5-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2" stroke="#2b241d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="swatch-label">EyeOffIcon</div>
+        <div class="swatch-usage" style="text-align: center;">비밀번호 숨김</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div style="width: 56px; height: 56px; border-radius: 16px; background: #b5652b; display: flex; align-items: center; justify-content: center;">
+          <svg width="30" height="30" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4.1" fill="#f6f0e6" />
+            <path d="M4 20.5c0-4.7 3.58-8 8-8s8 3.3 8 8Z" fill="#f6f0e6" />
+          </svg>
+        </div>
+        <div class="swatch-label">App Icon</div>
+        <div class="swatch-usage" style="text-align: center;">파비콘 / 홈화면 아이콘</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="width: 100%; height: 1px; background: #ddd1ba;"></div>
+
+  <!-- Radius -->
+  <div style="display: flex; flex-direction: column; gap: 18px;">
+    <div class="eyebrow">Radius · 모서리</div>
+    <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+        <div style="width: 72px; height: 72px; border-radius: 8px; background: #ece2d0;"></div>
+        <div class="swatch-hex">8px · lg</div>
+        <div class="swatch-usage">입력창, 작은 버튼</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+        <div style="width: 72px; height: 72px; border-radius: 10px; background: #ece2d0;"></div>
+        <div class="swatch-hex">10px</div>
+        <div class="swatch-usage">주요 CTA 버튼, 캘린더 날짜칸</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+        <div style="width: 72px; height: 72px; border-radius: 12px; background: #ece2d0;"></div>
+        <div class="swatch-hex">12px · xl</div>
+        <div class="swatch-usage">요약 카드, 모달 사진 타일</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+        <div style="width: 72px; height: 72px; border-radius: 16px; background: #ece2d0;"></div>
+        <div class="swatch-hex">16px · 2xl</div>
+        <div class="swatch-usage">본문 카드, 테이블, 모달 시트</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+        <div style="width: 72px; height: 72px; border-radius: 9999px; background: #ece2d0;"></div>
+        <div class="swatch-hex">full</div>
+        <div class="swatch-usage">배지, 아이콘 원, 필 버튼</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
