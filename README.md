@@ -36,6 +36,10 @@ house-rules/
   canvas.json
 ```
 
+## Typography
+
+서체 전체 목록(확정된 것 + 필요할 때 쓸 후보들)은 [typography.md](./typography.md) 참고.
+
 ## 앱 코드와 동기화
 
 `dimension-crew` 앱의 디자인 토큰이 바뀌면(`src/app/globals.css`) 이 저장소도 같이 갱신해주세요. 실제 값이 바뀌었는데 여기가 예전 값으로 남아있으면 레퍼런스로서 의미가 없습니다.
