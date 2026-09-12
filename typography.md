@@ -20,6 +20,11 @@ House Rules에 적용된 조합입니다.
 .serif-kr { font-family: "Maru Buri", "Noto Serif KR", "Georgia", serif; } /* 폰트 파일은 house-rules/Main.dc.html 안에 base64로 내장되어 있음 */
 ```
 
+## 표기 규칙 (Do / Don't)
+
+- **이탤릭체 사용 금지 — 영문·국문 모두.** 한글 폰트는 대부분 진짜 이탤릭 글리프가 없어서 브라우저가 억지로 기울이는(synthetic oblique) 방식인데, 이게 획이 뭉개져 보여서 지저분합니다. 영문도 통일성을 위해 함께 금지 — `font-style: italic`을 어디에도 쓰지 않습니다.
+- **강조가 필요하면 볼드(굵기)를 씁니다.** 제목, 강조할 내용(중요 안내, 키워드)에 볼드 적용. 부가 설명·번역문처럼 "덜 중요함"을 표시할 때는 이탤릭 대신 **작은 크기 + 무채색(muted) 컬러** 조합을 씁니다(House Rules의 영문 번역 줄이 이 방식).
+
 ## Sans-serif (본문) — 후보
 
 지금 하우스룰/앱 본문은 Pretendard를 쓰고 있습니다. 다른 톤이 필요할 때 쓸 수 있게 3개를 정리해뒀습니다.
