@@ -22,6 +22,20 @@ design-system/
 
 각 `.dc.html`은 [Claude Design Components](https://claude.ai/design) 형식의 아트보드 소스입니다.
 
+## Stay Dimansion House Rules
+
+숙소 안내문(하우스룰) 캔버스. 라이브: https://claude.ai/code/artifact/fc099819-7cf7-482a-ae02-02a5b758190c
+
+- **영문 워드마크(STAY DIMANSION)**: Cormorant Garamond (Google Fonts)
+- **국문 헤드라인**: Maru Buri(마루 부리, 네이버) — `house-rules/Main.dc.html`에 `@font-face`로 폰트 파일 자체가 base64로 내장되어 있음(구글 폰트에 없는 폰트라서)
+- 본문/안내 텍스트는 기존대로 Noto Sans KR 유지
+
+```
+house-rules/
+  Main.dc.html   # 하우스룰 1페이지 (1123x794, 인쇄용 fixed)
+  canvas.json
+```
+
 ## 앱 코드와 동기화
 
 `dimension-crew` 앱의 디자인 토큰이 바뀌면(`src/app/globals.css`) 이 저장소도 같이 갱신해주세요. 실제 값이 바뀌었는데 여기가 예전 값으로 남아있으면 레퍼런스로서 의미가 없습니다.
