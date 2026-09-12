@@ -36,9 +36,22 @@ house-rules/
   canvas.json
 ```
 
+## Stay Dimansion Welcome Card
+
+객실용 웰컴카드 캔버스. 라이브: https://claude.ai/code/artifact/d7666607-801c-4813-a45c-63af6747aae9
+
+```
+welcome-card/
+  Main.dc.html   # 480x680 카드, 손님이름/객실번호/와이파이/체크아웃 시간 편집 가능
+```
+
 ## Typography
 
 서체 전체 목록(확정된 것 + 필요할 때 쓸 후보들)은 [typography.md](./typography.md) 참고.
+
+## 디자인 규칙
+
+브랜드 표기 규칙(이탤릭 금지, 강조는 제목에만, 자간, 줄바꿈 등)과 정렬·여백 규칙은 [CLAUDE.md](./CLAUDE.md) 참고. 브랜드에 국한되지 않는 일반 원칙은 [.claude/skills/editorial-design/SKILL.md](./.claude/skills/editorial-design/SKILL.md)에 따로 정리했습니다.
 
 ## 앱 코드와 동기화
 
